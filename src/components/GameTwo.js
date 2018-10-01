@@ -1,12 +1,14 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import axios from 'axios';
+import { Card, CardImg, CardText, CardBody, CardLink,
+    CardTitle } from 'reactstrap';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
 import apiDataTwo from '../actions/apiDataTwo';
 
-
+import '../styles/GameTwo.css';
 
 class GameTwo extends React.Component {
     
@@ -45,11 +47,23 @@ class GameTwo extends React.Component {
         console.log(finalArray);
 
         let result = finalArray.map(game => {
-            return <li className="streamList">{game.channel.display_name}</li>
+            return <div className="cards">
+                <Card className="icard">
+                    <CardBody>
+                    <CardTitle>{game.channel.display_name}</CardTitle>
+                    </CardBody>
+                    <CardImg width="30%" src={game.channel.logo} alt="Streamer's Logo" />
+                    <CardBody>
+                    <CardText>{game.channel.status}</CardText>
+                    <CardLink href={game.channel.url} target="_blank">{game.channel.url}</CardLink>
+                    </CardBody>
+                </Card>
+            </div>
         })
         return (
-            <div>
+            <div className="bodyTwo">
                 <Navbar />
+                <h1 className="h1Class">World of Warcraft Streamers</h1>
                 {result}
                 <Footer />
             </div>

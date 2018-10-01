@@ -4,10 +4,12 @@ import React, { Component } from 'react';
 
 
 import MainHeader from './MainHeader';
-import Footer from './Footer';
+import FooterHome from './FooterHome';
 import Message from './Message';
 import Navbar from './Navbar';
+import Loader from './presentational/Loader';
 
+import '../styles/Home.css';
 
 export default class Home extends Component {
 
@@ -21,8 +23,11 @@ export default class Home extends Component {
                 <Navbar />
 
                 <Message />
+
+                <Loader />
                 
-                <Footer />
+                <FooterHome />
+
             </div>
         )
     }
