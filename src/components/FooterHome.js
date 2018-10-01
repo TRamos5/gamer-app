@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-import '../styles/Footer.css';
+import '../styles/FooterHome.css';
 
 
-export default class Footer extends Component {
+export default class FooterHome extends Component {
     render() {
         return (
             <Row>
-                <Col lg={12} className="footer">
+                <Col lg={12} className="footerHome">
                     <footer>
-                        Popular Streamers &#169; 2018
+                        Popular Games &#169; 2018
                     </footer>
                 </Col>
             </Row>
