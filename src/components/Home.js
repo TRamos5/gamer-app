@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 
 import MainHeader from './MainHeader';
-import FooterHome from './FooterHome';
+import Footer from './Footer';
 import Message from './Message';
 import Navbar from './Navbar';
 import Loader from './presentational/Loader';
@@ -26,7 +26,7 @@ export default class Home extends Component {
 
                 <Loader />
                 
-                <FooterHome />
+                <Footer />
 
             </div>
         )
