@@ -63,8 +63,13 @@ class GameTwo extends React.Component {
         return (
             <div className="bodyTwo">
                 <Navbar />
+
                 <h1 className="h1Class">World of Warcraft Streamers</h1>
-                {result}
+
+                <div className="cardHolder">
+                    {result}
+                </div>
+
                 <Footer />
             </div>
         )
