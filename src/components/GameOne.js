@@ -63,8 +63,13 @@ class GameOne extends React.Component {
         return (
             <div className="bodyOne">
                 <Navbar />
+
                 <h1 className="h1Class">Fortnite Streamers</h1>
-                {result}
+
+                <div className="cardHolder">
+                    {result}
+                </div>
+
                 <Footer />
             </div>
         )

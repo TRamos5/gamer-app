@@ -63,8 +63,13 @@ class GameThree extends React.Component {
         return (
             <div className="bodyThree">
                 <Navbar />
+
                 <h1 className="h1Class">League of Legends Streamers</h1>
-                {result}
+
+                <div className="cardHolder">
+                    {result}
+                </div>
+
                 <Footer />
             </div>
         )
