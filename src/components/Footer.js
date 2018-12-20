@@ -10,7 +10,7 @@ export default class Footer extends Component {
             <Row>
                 <Col lg={12} className="footer">
                     <footer>
-                        Popular Streamers &#169; 2019
+                        Popular Streamers &#169; 2018
                     </footer>
                 </Col>
             </Row>
